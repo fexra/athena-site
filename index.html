@@ -5,11 +5,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Athena (ATHX) is a CryptoNote slow settlement network.">
-        <title>Athena (ATHX) - Slow Settlement Network</title>
-        <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+		
+		<title>Athena (ATHX) - Slow Settlement Network</title>
+	   
+		<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+	   
+		<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', () => {
+				const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
+				if ($navbarBurgers.length > 0) {
+				$navbarBurgers.forEach( el => {
+					el.addEventListener('click', () => {
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+					});
+				});
+				}
+			});
+		</script>
     </head>
     <body >
         <section class="hero is-white is-fullheight">
@@ -21,22 +39,32 @@
                     <a class="navbar-item is-size-3">
                         Athena
                     </a>
-                    <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                    <span class="navbar-burger burger" data-target="navbarMenu">
                     <span></span>
                     <span></span>
                     <span></span>
                     </span>
                 </div>
-                <div id="navbarMenuHeroC" class="navbar-menu">
+                <div id="navbarMenu" class="navbar-menu">
                     <div class="navbar-end">
-                    <span class="navbar-item">
-                        <a href="https://github.com/athena-network/athena" class="button is-dark">
-                        <span class="icon">
-                            <i class="fab fa-github"></i>
-                        </span>
-                        <span>Github</span>
-                        </a>
-                    </span>
+					<span class="navbar-item">
+						<a href="http://blocks.athx.host" class="button is-light">
+						<span class="icon">
+							<i class="fa fa-search"></i>
+						</span>
+						<span>Block Explorer</span>
+						</a>
+					</span>
+					<span class="navbar-item">
+							<a href="http://pool.athx.host" class="button is-light">
+							<span class="icon">
+								<i class="fa fa-users"></i>
+							</span>
+							<span>Mining Pool</span>
+							</a>
+						</span>
+	
+
                     </div>
                 </div>
                 </div>
@@ -54,17 +82,27 @@
             </div>
 
             <!-- Hero footer: will stick at the bottom -->
-            <div class="hero-foot">
-            <nav class="tabs is-boxed is-fullwidth">
-                <div class="container">
-                <ul>
-                    <li><a href="http://blocks.athx.host">Block Explorer</a></li>
-                    <li><a href="http://pool.athx.host">Pool</a></li>
+            <footer class="footer hero-foot">
+				<div class="container">
+					<div class="columns">
+						<div class="column has-text-left">
+								&copy; 2018 Athena Foundation 
 
-                </ul>
-                </div>
-            </nav>
-            </div>
-        </section>
-    </body>
+						</div>
+						<div class="column has-text-right">
+							<a href="https://github.com/athena-network/athena" class="button is-dark">
+								<span class="icon">
+									<i class="fab fa-github"></i>
+								</span>
+								<span>Github</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		
+	</body>
+	
 </html>
