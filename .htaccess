@@ -1,3 +1,0 @@
-Options +FollowSymLinks
-RewriteEngine On
-RewriteRule ^mining.$ http://athx.org/mining.html [R=301,L]
