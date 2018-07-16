@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Athena (ATHX) is a CryptoNote slow settlement network.">
 		
-		<title>Athena (ATHX) - Slow Settlement Network</title>
+		<title>Athena (ATHX) - Mining</title>
 	   
 		<link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
@@ -76,6 +76,7 @@
 										<span>Mining</span>
 									</a>
 								</span>
+
 							</div>
 						</div>
 					</div>
@@ -84,12 +85,32 @@
 
             <!-- Hero content: will be in the middle -->
             <div class="hero-body">
-            <div class="container has-text-centered">
-                <img src="assets/img/logo.png" />
-                <h2 class="subtitle is-large" style="padding-top:10px;">
-                    The CryptoNote Settlement Network
-                </h2>
-            </div>
+				<div class="container">
+					<div class="notification is-info has-text-centered">
+						We recommend solo mining, however, <a href="http://explorer.athx.org/#pools">pool mining</a> is supported.
+					</div>
+
+					<div class="tile is-ancestor">
+						<div class="tile is-parent is-12">
+							<article class="tile is-child notification">
+								<p class="title is-3 has-text-centered">Solo Mining</p>
+								<hr>
+								<p class="subtitle is-5">Step 1</p>
+								<p>Download the source code from the official <a href="https://github.com/athena-network/athena">Github Repository</a>.</p>
+								<hr>
+								<p class="subtitle is-5">Step 2</p>
+								<p>Compile the source code using the instructions in the README.md file for Linux/Mac/Windows.</p>
+								<hr>
+								<p class="subtitle is-5">Step 3</p>
+								<p>Run the solominer in <kbd>build/src/solominer</kbd> with the following command</p>
+								<p class="notification is-dark"><kbd>solominer --address &lt;your address&gt; --log-level 3 </kbd></p>
+
+							</article>
+						</div>
+					</div>
+					
+
+				</div>
             </div>
 
             <!-- Hero footer: will stick at the bottom -->
@@ -126,6 +147,7 @@
 
 								<span>Github</span>
 							</a>
+
 						</div>
 					</div>
 				</div>
