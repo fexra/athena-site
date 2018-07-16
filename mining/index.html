@@ -86,8 +86,8 @@
             <!-- Hero content: will be in the middle -->
             <div class="hero-body">
 				<div class="container">
-					<div class="notification is-info has-text-centered">
-						We recommend solo mining, however, <a href="http://explorer.athx.org/#pools">pool mining</a> is supported.
+					<div class="notification is-warning has-text-centered">
+						We recommend solo mining, however, <a href="http://explorer.athx.org/#pools">shared pools are supported and may be available</a>.
 					</div>
 					
 					<br>
@@ -97,20 +97,61 @@
 					<div class="tile is-ancestor">
 						<div class="tile is-parent is-12">	
 							<article class="tile is-child notification">
-								<p class="subtitle is-5">Step 1</p>
-								<p>Download the source code from the official <a href="https://github.com/athena-network/athena">Github Repository</a>.</p>
-								<hr>
-								<p class="subtitle is-5">Step 2</p>
-								<p>Compile the source code using the instructions in the README.md file for Linux/Mac/Windows.</p>
-								<hr>
-								<p class="subtitle is-5">Step 3</p>
-								<p>Run the solominer in <kbd>build/src/solominer</kbd> with the following command:</p>
-								<p class="notification is-dark"><kbd>solominer --address &lt;your address&gt; --log-level 3 </kbd></p>
-
+								<p>
+									<span class="tag is-dark is-size-6">Step 1</span>
+									Download the source code from the official <a href="https://github.com/athena-network/athena">Github Repository</a>.
+								</p>
+								<br>
+								<p>
+									<span class="tag is-dark is-size-6">Step 2</span>
+									Compile the source code using the instructions in the README.md file for Linux/Mac/Windows.
+								</p>
+								<br>
+								<p>
+									<p>
+										<span class="tag is-dark is-size-6">Step 3</span>
+										Run the solominer in <kbd>../athena/build/src/</kbd> with the following command:
+									</p>
+									<br>
+									<p class="notification is-dark"><kbd>solominer --address &lt;your address&gt; --log-level 3 </kbd></p>
+								</p>
 							</article>
 						</div>
 					</div>
+					
+					<br>
+
+					<div class="title is-3 has-text-centered">Solo Pool Mining Instructions</div>
+
+					<div class="tile is-ancestor">
+						<div class="tile is-parent is-12">	
+							<article class="tile is-child notification">
+								<p>
+									<span class="tag is-dark is-size-6">Step 1</span>
+									Download the athena-pool source code from the official <a href="https://github.com/athena-network/athena-pool">Github Repository</a>.
+								</p>
+								<br>
+								<p>
+									<span class="tag is-dark is-size-6">Step 2</span>
+									Follow the instructions in the README.md file.
+								</p>
+								<br>
+								<p>
+									<span class="tag is-dark is-size-6">Step 3</span>
+									Once everything is working, configure your pool fees to 100%.
+								</p>
+								<br>
+								<p>
+									<span class="tag is-dark is-size-6">Step 4</span>
+									Point your miner to your solo pool like you would do with any other pool.
+								</p>
+							</article>
+						</div>
+					</div>
+
+
 				</div>
+
             </div>
 
             <!-- Hero footer: will stick at the bottom -->
